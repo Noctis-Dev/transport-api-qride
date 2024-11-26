@@ -13,6 +13,7 @@ npm-cache
 # Ignora archivos de configuración sensibles
 .env
 .env.*
+/app/qride-22a76-firebase-adminsdk-vc15e-5d8263c05f.json
 
 # Ignora archivos de virtual environments
 venv/

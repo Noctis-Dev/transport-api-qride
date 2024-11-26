@@ -8,7 +8,6 @@ class Vehicle:
 
     def to_dict(self):
         return {
-            "id": self.id,
             "economic_number": self.economic_number,
             "route_id": self.route_id,
             "current_location": self.current_location,
@@ -16,9 +15,9 @@ class Vehicle:
         }
 
     @staticmethod
-    def from_dict(source):
+    def from_dict(id, source):
         return Vehicle(
-            source["id"],
+            id,
             source["economic_number"],
             source["route_id"],
             source["current_location"],

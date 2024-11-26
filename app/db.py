@@ -1,16 +1,14 @@
 import firebase_admin
 from firebase_admin import credentials, firestore
-from dotenv import load_dotenv
 import os
 
-# Cargar las variables de entorno desde el archivo .env
-load_dotenv()
-
 # Obtener la ruta del archivo de credenciales desde las variables de entorno
-SERVICE_ACCOUNT_KEY = os.getenv("SERVICE_ACCOUNT_KEY")
+current_directory = os.path.dirname(os.path.abspath(__file__))
+service_account_key_path = os.path.join(current_directory, 'qride-22a76-firebase-adminsdk-vc15e-5d8263c05f.json')
+
 
 # Inicializar la aplicación de Firebase
-cred = credentials.Certificate(SERVICE_ACCOUNT_KEY)
+cred = credentials.Certificate(service_account_key_path)
 firebase_admin.initialize_app(cred)
 
 # Obtener una instancia de Firestore
