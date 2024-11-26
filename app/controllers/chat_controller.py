@@ -13,6 +13,11 @@ async def post_message(route_name: str, message_create: RequestMessage, db=Depen
     try:
         chat_service = ChatService(db)
         message_id = chat_service.send_message(route_name, message_create.user, message_create.message)
+        
+        # Detectar palabras clave y crear una incidencia si es necesario
+        if chat_service.detect_keywords(message_create.message):
+            chat_service.create_incident(message_create.user, message_create.message)
+        
         response = ResponseMessage(
             message='Message sent successfully',
             message_id=message_id

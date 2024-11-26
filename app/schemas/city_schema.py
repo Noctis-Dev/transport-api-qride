@@ -3,5 +3,5 @@ from pydantic import BaseModel
 class CityCreate(BaseModel):
     name: str
 
-class CityResponse(BaseModel):
+class ResponseCity(BaseModel):
     id: str

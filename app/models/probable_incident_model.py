@@ -1,4 +1,4 @@
-class Message: 
+class ProbableIncident:
     def __init__(self, user, message, timestamp):
         self.user = user
         self.message = message
@@ -6,7 +6,7 @@ class Message:
 
     def to_dict(self):
         return {
-            'user_id': self.user,
+            'user': self.user,
             'message': self.message,
             'timestamp': self.timestamp
         }
