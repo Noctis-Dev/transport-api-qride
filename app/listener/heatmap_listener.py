@@ -6,25 +6,35 @@ from app.services.heatmap_service import HeatmapService
 heatmap_service = HeatmapService()
 random_data_generated = False  # Bandera para controlar la ejecución de generate_random_data
 
-def job_generate_heatmap_and_predict():
-    global random_data_generated
+def job_generate_heatmap():
     timestamp = int(time.time())
     heatmap_service.generate_heatmap(timestamp)
-    heatmap_service.predict_user_density(timestamp)
     
     # Ejecutar generate_random_data una vez después de predict_user_density
+    global random_data_generated
     if not random_data_generated:
         heatmap_service.generate_random_data(timestamp)
         random_data_generated = True
 
+def job_predict_user_density():
+    timestamp = int(time.time())
+    heatmap_service.predict_user_density(timestamp)
+
 def run_scheduler():
-    schedule.every(1).minutes.do(job_generate_heatmap_and_predict)
+    schedule.every(1).minutes.do(job_generate_heatmap)
+    # Ejecutar predict_user_density al segundo minuto
+    schedule.every(2).minutes.do(job_predict_user_density).tag('initial_predict')
     while True:
         schedule.run_pending()
         # Calcular el tiempo restante hasta el próximo minuto
         now = time.time()
         sleep_time = 60 - (now % 60)
         time.sleep(sleep_time)
+        # Verificar si el job 'initial_predict' se ha ejecutado
+        if schedule.get_jobs('initial_predict'):
+            # Cancelar el job 'initial_predict' y programar predict_user_density cada media hora
+            schedule.clear('initial_predict')
+            schedule.every(30).minutes.do(job_predict_user_density)
 
 # Iniciar el hilo del scheduler
 scheduler_thread = threading.Thread(target=run_scheduler)
