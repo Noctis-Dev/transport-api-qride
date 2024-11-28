@@ -1,3 +1,5 @@
+from app.schemas.route_schema import Stop
+
 class Stop:
     def __init__(self, id, latitude, longitude):
         self.id = id
@@ -16,4 +18,12 @@ class Stop:
             id,
             source["latitude"],
             source["longitude"]
+        )
+        
+    @staticmethod
+    def from_request(request: Stop):
+        return Stop(
+            None,
+            request.latitude,
+            request.longitude
         )
