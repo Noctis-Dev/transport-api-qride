@@ -8,15 +8,13 @@ class RouteStopRequest(BaseModel):
     route: str
     stop: Stop
 
-
 class RouteStopResponse(BaseModel):
     route_stop_id: str
     name: str 
 
-
 class NearbyStopsRequest(BaseModel):
-    latitude: float
-    longitude: float
+    latitude: str
+    longitude: str
     radius: float = 5.0
 
 class NearbyStops(RouteStopResponse):

@@ -1,7 +1,7 @@
 from app.schemas.route_stop_schema import RouteStopRequest
 
 class RouteStop:
-    def __init__(self, id, name, stop_id, reference, routes, latitud, longitud):
+    def __init__(self, id, name, stop_id, reference, routes):
         self.id = id
         self.name = name
         self.stop_id = stop_id
