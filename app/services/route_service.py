@@ -12,4 +12,7 @@ class RouteService:
         stops_ids = self.stop_service.create_stops(route.stops)
         route = Route.from_request(route, stops_ids)
         route_id = self.route_repository.save_route(route)
-        return RouteResponse(id=route_id, name=route.name)
+        return RouteResponse(id=route_id, name=route.name, city_id=route.city_id, stops=route.stops)
+    
+    def get_all_routes(self):
+        return self.route_repository.get_all_routes()
