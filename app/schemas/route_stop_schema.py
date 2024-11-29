@@ -1,4 +1,5 @@
 from pydantic import BaseModel
+from typing import List
 from app.schemas.route_schema import Stop
 
 class RouteStopRequest(BaseModel):
@@ -18,7 +19,10 @@ class NearbyStopsRequest(BaseModel):
     longitude: float
     radius: float = 5.0
 
-
+class NearbyStops(RouteStopResponse):
+    latitude: float
+    longitude: float
+    
 class NearbyStopsResponse(BaseModel):
-    stops: RouteStopResponse
+    stops: List[NearbyStops] = []
 

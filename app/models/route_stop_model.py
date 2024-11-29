@@ -7,8 +7,6 @@ class RouteStop:
         self.stop_id = stop_id
         self.reference = reference
         self.routes = routes
-        self.latitud = latitud
-        self.longitud = longitud
 
 
 
@@ -18,8 +16,6 @@ class RouteStop:
             "stop_id": self.stop_id,
             "reference": self.reference,
             "routes": self.routes,
-            "latitud": self.latitud,
-            "longitud": self.longitud
         }
 
     @staticmethod
@@ -30,9 +26,8 @@ class RouteStop:
             source["stop_id"],
             source["reference"],
             source["routes"],
-            source["latitud"],
-            source["longitud"]
         )
+        
     @staticmethod
     def from_request(request: RouteStopRequest, stop_id):
         return RouteStop(
@@ -41,7 +36,5 @@ class RouteStop:
             stop_id,
             request.reference,
             request.route,
-            request.stop.latitude,
-            request.stop.longitude
         )
         

@@ -1,9 +1,6 @@
 from pydantic import BaseModel
 from typing import List
-
-class Stop(BaseModel):
-    latitude: float
-    longitude: float
+from app.schemas.stop_schema import Stop
 
 class RouteRequest(BaseModel):
     name: str

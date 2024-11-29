@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends
 from app.db import get_firestore_db
-from app.schemas.route_stop_schema import RouteStopRequest, RouteStopResponse # Importa el esquema correcto
+from app.schemas.route_stop_schema import RouteStopRequest
 from app.services.route_stop_service import RouteStopService
 from app.schemas.base_response import BaseResponse
 from app.schemas.route_stop_schema import NearbyStopsRequest as NearbyRouteStopsRequest

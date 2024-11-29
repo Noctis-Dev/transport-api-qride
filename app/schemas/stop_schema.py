@@ -1,17 +1,5 @@
 from pydantic import BaseModel
 
-class StopRequest(BaseModel):
-    name: str
+class Stop(BaseModel):
     latitude: float
     longitude: float
-    reference: str
-
-
-
-
-class ResponseStop(BaseModel):
-    id: str
-    name: str
-    latitude: float
-    longitude: float
-    reference: str
