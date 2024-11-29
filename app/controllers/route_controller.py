@@ -17,7 +17,7 @@ def create_route(route: RouteRequest, db: any = Depends(get_firestore_db)):
     route = route_service.create_route(route)
     return BaseResponse(data=route, message="Route created successfully", success=True)
 
-@router.get("/routes", response_model=BaseResponse)  # Usa RoutesResponse
+@router.get("/routes", response_model=BaseResponse)  
 def get_all_routes(db: any = Depends(get_firestore_db)):
     route_service = RouteService(db)
     routes_data = route_service.get_all_routes()

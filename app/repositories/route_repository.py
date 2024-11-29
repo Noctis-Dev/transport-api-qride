@@ -16,6 +16,6 @@ class RouteRepository:
         for route_doc in all_routes_ref:
             route_data = route_doc.to_dict()
             route = Route.from_dict(route_doc.id, route_data)
-            all_routes.append(route.to_dict())
+            all_routes.append(route)
                               
         return all_routes
