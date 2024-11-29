@@ -7,7 +7,7 @@ class StopService:
     def __init__(self, db):
         self.stop_repository = StopRepository(db)
 
-    def create_stop(self, stop):
+    def create_stop(self, stop: Stop):
         stop = StopModel.from_request(stop)
         stop_id = self.stop_repository.save_stop(stop)
         return stop_id

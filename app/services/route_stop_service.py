@@ -1,19 +1,20 @@
 from app.repositories.route_stop_repository import RouteStopRepository
 from app.models.route_stop_model import RouteStop
 from app.schemas.route_stop_schema import RouteStopRequest, RouteStopResponse
+from app.services.stop_service import StopService
+from app.schemas.route_stop_schema import NearbyStopsRequest as NearbyRoutStopsRquest
 
 
 class RouteStopService:
     def __init__(self, db: any):
         self.route_stop_repository = RouteStopRepository(db)
+        self.stop_service = StopService(db)
 
-    def create_route_stop(self, route_id: str, stop: RouteStopRequest):
-         # Convertir a modelo de dominio:
-        stop_dict = stop.dict()
-        stop_model = RouteStop(id=None, name=stop_dict["name"],  stop_id=stop_dict.get("stop_id"), reference=stop_dict.get("reference")) # Corregir la instanciación
+    def create_route_stop(self, route_stop: RouteStopRequest):
+        stop_id = self.stop_service.create_stop(route_stop.stop)
+        route_stop = RouteStop.from_request(route_stop, stop_id)
+        route_stop_id = self.route_stop_repository.create_route_stop(route_stop)
+        return RouteStopResponse(route_stop_id=route_stop_id, name=route_stop.name)
 
-        new_stop_id = self.route_stop_repository.create_route_stop(route_id, stop_model)
-
-        return RouteStopResponse(message="Route stop created successfully", stop_id=new_stop_id, route_id=route_id)  # Devolver el ID de la parada y la ruta
-
-
+    def get_nearby_route_stops (self, request: NearbyRoutStopsRquest):
+        return self.route_stop_repository.get_nearby_route_stops(request.latitude, request.longitude, request.radius)

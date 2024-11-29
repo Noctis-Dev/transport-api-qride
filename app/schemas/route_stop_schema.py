@@ -1,11 +1,24 @@
 from pydantic import BaseModel
+from app.schemas.route_schema import Stop
 
 class RouteStopRequest(BaseModel):
     name: str
-    stop_id: str
     reference: str
+    route: str
+    stop: Stop
+
 
 class RouteStopResponse(BaseModel):
-    message: str
-    stop_id: str
-    route_id: str
+    route_stop_id: str
+    name: str 
+
+
+class NearbyStopsRequest(BaseModel):
+    latitude: float
+    longitude: float
+    radius: float = 5.0
+
+
+class NearbyStopsResponse(BaseModel):
+    stops: RouteStopResponse
+
