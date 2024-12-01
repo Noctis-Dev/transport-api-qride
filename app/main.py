@@ -9,9 +9,14 @@ from app.controllers.route_stop_controller import router as route_stop_router
 from app.controllers.route_stop_controller import router as nearby_route_stops_router
 from app.db import get_firestore_db
 from app.services.route_stop_service import RouteStopService
+from app.services.user_activity_service import UserActivityService
+import app.listener.heatmap_listener
+
 
 db = get_firestore_db()
 route_stop_service = RouteStopService(db)
+user_activity_service = UserActivityService(db)
+
 
 app = FastAPI()
 
@@ -28,6 +33,17 @@ def start_generate_random_route_stops():
         radius_km = 10
         num_stops = 10
         threading.Thread(target=route_stop_service.generate_random_route_stops, args=(reference_point, radius_km, num_stops)).start()
+
+def start_generate_random_user_activities():
+    reference_point = (16.623413, -93.100081)
+    radius_km = 0.5
+    num_activities = 10
+    threading.Thread(target=user_activity_service.generate_random_user_activities, args=(reference_point, radius_km, num_activities)).start()
+    
+@app.on_event("startup")
+async def startup_event():
+    start_generate_random_route_stops()
+    start_generate_random_user_activities()
 
 @app.get("/")
 def read_root():

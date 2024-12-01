@@ -23,6 +23,6 @@ async def post_message(route_name: str, message_create: RequestMessage, db=Depen
             message_id=message_id
         )
         
-        return BaseResponse(data=response, message='Message sent', success=True, ) 
+        return BaseResponse(data=response, message='Message sent', success=True, error="" ) 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
