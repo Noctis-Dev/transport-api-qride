@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 import threading
+import logging
 from app.controllers.vehicle_controller import router as vehicle_router
 from app.controllers.city_controller import router as city_router
 from app.controllers.chat_controller import router as chat_router
@@ -48,4 +49,7 @@ async def startup_event():
 @app.get("/")
 def read_root():
     return {"message": "Welcome to Qride API"}
+
+logging.basicConfig(level=logging.DEBUG)
+
 
