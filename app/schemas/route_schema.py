@@ -16,3 +16,8 @@ class RouteResponse(BaseModel):
 class RoutesResponse(BaseModel):
     routes: List[RouteResponse] 
     
+class RouteDrawRequest(BaseModel):
+    stops: List[str]
+
+class RouteDrawResponse(BaseModel):
+    stops: List[Stop]

@@ -1,7 +1,8 @@
 from app.models.route_model import Route
 from app.repositories.route_repository import RouteRepository
 from app.services.stop_service import StopService
-from app.schemas.route_schema import RouteRequest, RouteResponse
+from app.schemas.route_schema import RouteRequest, RouteResponse, RouteDrawRequest, RouteDrawResponse
+from app.schemas.stop_schema import Stop
 
 class RouteService:
     def __init__(self, db):
@@ -16,3 +17,12 @@ class RouteService:
     
     def get_all_routes(self):
         return self.route_repository.get_all_routes()
+    
+    def get_route_stops(self, route_draw: RouteDrawRequest):
+        stops = []
+        for stop_id in route_draw.stops:
+            stop = self.stop_service.get_stop_by_id(stop_id)
+            stops.append(Stop(latitude=stop.latitude, longitude=stop.longitude))
+        return RouteDrawResponse(stops=stops)
+        
+        
