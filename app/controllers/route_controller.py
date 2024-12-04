@@ -42,15 +42,15 @@ def get_all_routes(db: any = Depends(get_firestore_db)):
         logging.error(f"Error fetching routes: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@router.get("/route/{route_id}", response_model=BaseResponse)
-def get_route_draw(route_draw: RouteDrawRequest = Query(None), db: any = Depends(get_firestore_db)):
+@router.post("/route_draw", response_model=BaseResponse)
+def get_route_draw(route_draw: RouteDrawRequest, db: any = Depends(get_firestore_db)):
     try:
-        logging.info(f"Fetching route draw for route_id: {route_draw.route_id}")
+        logging.info(f"Fetching route draw for stops: {route_draw.stops}")
         route_service = RouteService(db)
         route = route_service.get_route_stops(route_draw)
-        logging.info(f"Route retrieved successfully for route_id: {route_draw.route_id}")
+        logging.info(f"Route retrieved successfully for stops: {route_draw.stops}")
         return BaseResponse(data=route, message="Route retrieved successfully", success=True)
     except Exception as e:
-        logging.error(f"Error fetching route draw for route_id: {route_draw.route_id} - {str(e)}")
+        logging.error(f"Error fetching route draw for stops: {route_draw.stops} - {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
     

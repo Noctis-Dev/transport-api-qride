@@ -8,6 +8,7 @@ from app.controllers.user_activity_controller import router as user_activity_rou
 from app.controllers.route_controller import router as route_router
 from app.controllers.route_stop_controller import router as route_stop_router
 from app.controllers.route_stop_controller import router as nearby_route_stops_router
+import app.listener.heatmap_listener
 
 log_dir = "var/log"
 os.makedirs(log_dir, exist_ok=True)
