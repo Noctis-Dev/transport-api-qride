@@ -334,3 +334,209 @@
 2024-12-04 10:30:49,536 - INFO - Logging activity for user: TjPlorK9oYMlroJ9UdD6w28E2ns2
 2024-12-04 10:31:41,967 - ERROR - Error logging activity for user: TjPlorK9oYMlroJ9UdD6w28E2ns2 - Timeout of 60.0s exceeded, last exception: 503 failed to connect to all addresses; last error: UNKNOWN: ipv4:192.178.128.95:443: tcp handshaker shutdown
 2024-12-04 10:31:41,970 - INFO - Fetching nearby route stops for latitude: 16.6162725, longitude: -93.0906925, radius: 15.0
+2024-12-04 12:02:52,489 - WARNING - Retrying (Retry(total=9, connect=1, read=0, redirect=None, status=4)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /heatmap/1733335299.json?print=silent
+2024-12-04 12:16:26,761 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:16:26,862 - DEBUG - Adding TBB (C:\Users\Mane\Documents\Qride\back\enviroments\transport_api\Lib\site-packages\prophet\stan_model\cmdstan-2.33.1\stan\lib\stan_math\lib\tbb) to PATH
+2024-12-04 12:16:26,885 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:16:26,885 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:16:26,885 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:16:26,901 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:16:42,045 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:16:42,125 - DEBUG - TBB already found in load path
+2024-12-04 12:16:42,130 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:16:42,130 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:16:42,130 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:16:42,139 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:16:59,507 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:16:59,594 - DEBUG - TBB already found in load path
+2024-12-04 12:16:59,598 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:16:59,599 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:16:59,599 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:16:59,605 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:17:19,458 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:17:19,533 - DEBUG - TBB already found in load path
+2024-12-04 12:17:19,536 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:17:19,536 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:17:19,536 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:17:19,541 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:17:37,870 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:17:37,947 - DEBUG - TBB already found in load path
+2024-12-04 12:17:37,952 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:17:37,952 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:17:37,952 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:17:37,957 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:17:51,780 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:17:51,861 - DEBUG - TBB already found in load path
+2024-12-04 12:17:51,866 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:17:51,866 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:17:51,866 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:17:51,875 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:18:05,049 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:18:05,126 - DEBUG - TBB already found in load path
+2024-12-04 12:18:05,130 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:18:05,130 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:18:05,130 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:18:05,136 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:18:24,427 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:18:24,511 - DEBUG - TBB already found in load path
+2024-12-04 12:18:24,515 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:18:24,516 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:18:24,516 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:18:24,521 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:18:38,747 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:18:38,824 - DEBUG - TBB already found in load path
+2024-12-04 12:18:38,828 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:18:38,828 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:18:38,829 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:18:38,835 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:18:58,620 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:18:58,696 - DEBUG - TBB already found in load path
+2024-12-04 12:18:58,699 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:18:58,699 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:18:58,699 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:18:58,705 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:19:14,816 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:19:14,906 - DEBUG - TBB already found in load path
+2024-12-04 12:19:14,909 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:19:14,909 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:19:14,909 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:19:14,916 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:19:35,191 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:19:35,267 - DEBUG - TBB already found in load path
+2024-12-04 12:19:35,270 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:19:35,271 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:19:35,271 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:19:35,276 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:19:52,328 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:19:52,406 - DEBUG - TBB already found in load path
+2024-12-04 12:19:52,411 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:19:52,411 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:19:52,411 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:19:52,417 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:20:11,936 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:20:12,017 - DEBUG - TBB already found in load path
+2024-12-04 12:20:12,020 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:20:12,020 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:20:12,020 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:20:12,027 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:24:56,422 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:24:56,500 - DEBUG - TBB already found in load path
+2024-12-04 12:24:56,503 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:24:56,503 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:24:56,503 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:24:56,508 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:25:12,709 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:25:12,787 - DEBUG - TBB already found in load path
+2024-12-04 12:25:12,792 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:25:12,792 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:25:12,792 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:25:12,796 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:25:28,912 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:25:28,988 - DEBUG - TBB already found in load path
+2024-12-04 12:25:28,991 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:25:28,991 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:25:28,991 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:25:28,998 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:26:02,006 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:26:02,085 - DEBUG - TBB already found in load path
+2024-12-04 12:26:02,089 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:26:02,089 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:26:02,089 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:26:02,096 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:26:19,401 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:26:19,479 - DEBUG - TBB already found in load path
+2024-12-04 12:26:19,482 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:26:19,482 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:26:19,482 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:26:19,487 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:26:33,897 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:26:33,972 - DEBUG - TBB already found in load path
+2024-12-04 12:26:33,976 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:26:33,976 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:26:33,976 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:26:33,982 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:26:48,775 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:26:48,851 - DEBUG - TBB already found in load path
+2024-12-04 12:26:48,855 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:26:48,855 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:26:48,855 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:26:48,860 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:27:01,944 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:27:02,025 - DEBUG - TBB already found in load path
+2024-12-04 12:27:02,029 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:27:02,029 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:27:02,029 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:27:02,035 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:27:16,853 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:27:16,934 - DEBUG - TBB already found in load path
+2024-12-04 12:27:16,937 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:27:16,937 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:27:16,937 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:27:16,944 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:27:31,312 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:27:31,396 - DEBUG - TBB already found in load path
+2024-12-04 12:27:31,402 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:27:31,402 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:27:31,402 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:27:31,411 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:27:47,696 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:27:47,772 - DEBUG - TBB already found in load path
+2024-12-04 12:27:47,776 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:27:47,776 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:27:47,776 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:27:47,781 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:28:05,593 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:28:05,674 - DEBUG - TBB already found in load path
+2024-12-04 12:28:05,678 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:28:05,678 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:28:05,678 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:28:05,683 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:28:22,410 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:28:22,494 - DEBUG - TBB already found in load path
+2024-12-04 12:28:22,500 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:28:22,500 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:28:22,500 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:28:22,507 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:28:35,564 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:28:35,640 - DEBUG - TBB already found in load path
+2024-12-04 12:28:35,643 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:28:35,645 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:28:35,645 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:28:35,650 - INFO - n_changepoints greater than number of observations. Using 1.
+2024-12-04 12:31:02,997 - DEBUG - cmd: where.exe tbb.dll
+cwd: None
+2024-12-04 12:31:03,086 - DEBUG - TBB already found in load path
+2024-12-04 12:31:03,091 - INFO - Disabling yearly seasonality. Run prophet with yearly_seasonality=True to override this.
+2024-12-04 12:31:03,091 - INFO - Disabling weekly seasonality. Run prophet with weekly_seasonality=True to override this.
+2024-12-04 12:31:03,091 - INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+2024-12-04 12:31:03,102 - INFO - n_changepoints greater than number of observations. Using 0.
+2024-12-04 12:31:07,056 - WARNING - Retrying (Retry(total=9, connect=1, read=0, redirect=None, status=4)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /heatmap/1733333436.json
+2024-12-04 12:31:08,083 - WARNING - Retrying (Retry(total=8, connect=0, read=0, redirect=None, status=4)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DC3C8293A0>: Failed to resolve 'qride-22a76-default-rtdb.firebaseio.com' ([Errno 11001] getaddrinfo failed)")': /heatmap/1733333436.json

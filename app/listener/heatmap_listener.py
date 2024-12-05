@@ -21,17 +21,14 @@ def job_predict_user_density():
     heatmap_service.predict_user_density(timestamp)
 
 def run_scheduler():
-    schedule.every(1).minutes.do(job_generate_heatmap)
+    schedule.every(10).seconds.do(job_generate_heatmap)
     # Ejecutar predict_user_density al segundo minuto
     schedule.every(2).minutes.do(job_predict_user_density).tag('initial_predict')
     while True:
         schedule.run_pending()
-        # Calcular el tiempo restante hasta el próximo minuto
-        now = time.time()
-        sleep_time = 60 - (now % 60)
-        time.sleep(sleep_time)
+        time.sleep(1)  # Esperar 1 segundo entre cada verificación de tareas pendientes
         # Verificar si el job 'initial_predict' se ha ejecutado
-        if schedule.get_jobs('initial_predict'):
+        if not schedule.get_jobs('initial_predict'):
             # Cancelar el job 'initial_predict' y programar predict_user_density cada media hora
             schedule.clear('initial_predict')
             schedule.every(30).minutes.do(job_predict_user_density)
