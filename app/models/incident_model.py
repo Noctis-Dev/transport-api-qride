@@ -1,3 +1,5 @@
+from app.schemas.incident_schema import IncidentRequest
+
 class Incident: 
     def __init__(self, id, description, status, created_at, vehicle_id):
         self.id = id
@@ -22,6 +24,16 @@ class Incident:
             source["status"],
             source["created_at"],
             source["vehicle_id"]
+        )
+        
+    @staticmethod
+    def from_request(incident_request: IncidentRequest):
+        return Incident(
+            None,
+            incident_request.description,
+            incident_request.status,
+            None,
+            incident_request.vehicle_id
         )
 
     

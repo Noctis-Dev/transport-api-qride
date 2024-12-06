@@ -8,6 +8,7 @@ from app.controllers.user_activity_controller import router as user_activity_rou
 from app.controllers.route_controller import router as route_router
 from app.controllers.route_stop_controller import router as route_stop_router
 from app.controllers.route_stop_controller import router as nearby_route_stops_router
+from app.controllers.incident_controller import router as incident_router
 
 log_dir = "var/log"
 os.makedirs(log_dir, exist_ok=True)
@@ -27,6 +28,7 @@ app.include_router(user_activity_router , prefix="/api/v1")
 app.include_router(route_router , prefix="/api/v1")
 app.include_router(route_stop_router , prefix="/api/v1")
 app.include_router(nearby_route_stops_router , prefix="/api/v1")
+app.include_router(incident_router , prefix="/api/v1")
 
 @app.get("/")
 def read_root():

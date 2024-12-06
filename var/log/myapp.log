@@ -540,3 +540,13 @@ cwd: None
 2024-12-04 12:31:03,102 - INFO - n_changepoints greater than number of observations. Using 0.
 2024-12-04 12:31:07,056 - WARNING - Retrying (Retry(total=9, connect=1, read=0, redirect=None, status=4)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /heatmap/1733333436.json
 2024-12-04 12:31:08,083 - WARNING - Retrying (Retry(total=8, connect=0, read=0, redirect=None, status=4)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001DC3C8293A0>: Failed to resolve 'qride-22a76-default-rtdb.firebaseio.com' ([Errno 11001] getaddrinfo failed)")': /heatmap/1733333436.json
+2024-12-05 18:31:59,743 - INFO - Creating incident description='Se callo paquito' status=<Status.OPEN: 'OPEN'> vehicle_id='123'
+2024-12-05 18:32:22,723 - INFO - Retrieving incident pSdzYonejVw9l5gjcXVl
+2024-12-05 19:09:50,869 - INFO - Retrieving incident pSdzYonejVw9l5gjcXVl
+2024-12-05 19:13:13,790 - INFO - Listing incidents
+2024-12-05 19:14:06,223 - INFO - Listing incidents
+2024-12-05 19:18:05,919 - INFO - Listing incidents
+2024-12-05 19:20:32,757 - INFO - Retrieving incident pSdzYonejVw9l5gjcXVl
+2024-12-05 19:20:57,064 - INFO - Retrieving incident pSdzYonejVw9l5gjcXVl
+2024-12-05 19:23:38,979 - INFO - Retrieving incident pSdzYonejVw9l5gjcXVl
+2024-12-05 19:24:15,334 - INFO - Retrieving incident pSdzYonejVw9l5gjcXVl
