@@ -6,7 +6,7 @@ Esta api permite gestionar las rutas y las paradas en la aplicacion ademas de te
 
 - **Python 3.x**
 - **FastAPI** 
--**firebase core**
+- **firebase core**
 
 ---
 
